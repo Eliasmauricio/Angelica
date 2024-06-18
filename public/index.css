@@ -1,0 +1,255 @@
+/* Estilos Gerais */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.welcome {
+    margin-bottom: 0.5rem; /* Espaço entre o título e a imagem */
+}
+
+img {
+    width: 700px;
+    height: 400px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima do seu contêiner */
+    height: auto; /* Permite que a altura seja ajustada proporcionalmente à largura */
+}
+
+@media (max-width: 2000px) {
+    img {
+        width: 600px; /* Reduz a largura da imagem para 600px quando a tela for menor que 900px */
+        height: 343px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+@media (max-width: 700px) {
+    img {
+        width: 500px; /* Reduz a largura da imagem para 500px quando a tela for menor que 700px */
+        height: 286px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 400px; /* Reduz a largura da imagem para 400px quando a tela for menor que 500px */
+        height: 229px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+@media (max-width: 400px) {
+    img {
+        width: 300px; /* Reduz a largura da imagem para 300px quando a tela for menor que 400px */
+        height: 171px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+.home {
+    width: 700px;
+    height: 400px;
+    max-width: 100%; /* Garante que o elemento não ultrapasse a largura máxima do seu contêiner */
+    height: auto; /* Permite que a altura seja ajustada proporcionalmente à largura */
+}
+
+@media (max-width: 2000px) {
+    .home {
+        width: 700px; /* Reduz a largura do .home para 600px quando a tela for menor que 900px */
+        height: 343px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+@media (max-width: 700px) {
+    .home {
+        width: 500px; /* Reduz a largura do .home para 500px quando a tela for menor que 700px */
+        height: 286px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        width: 400px; /* Reduz a largura do .home para 400px quando a tela for menor que 500px */
+        height: 229px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        width: 300px; /* Reduz a largura do .home para 300px quando a tela for menor que 400px */
+        height: 171px; /* Mantém a proporção para 700x400 */
+    }
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Certifica-se de que o footer sobreponha os links */
+    cursor: pointer;
+}
+
+footer.hidden {
+    display: none;
+}
+
+.as {
+    color: #210cd6;
+    font-size: 18px;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Estilos Específicos para Contato */
+
+form {
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.social-links {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.social-links h3 {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+
+
+
+
