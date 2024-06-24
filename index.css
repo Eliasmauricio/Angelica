@@ -21,6 +21,7 @@ nav {
     margin-top: 0.5rem;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -67,6 +68,7 @@ main {
 }
 
 img {
+    border-style:outset;
     width: 700px;
     height: 400px;
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima do seu contêiner */
@@ -165,10 +167,14 @@ footer.hidden {
 .as {
     color: #210cd6;
     font-size: 18px;
+    padding-left: 20px;
 }
 
 a:hover {
     color: red;
+}
+a.prev, a.next{
+    cursor:pointer;
 }
 
 /* Estilos Específicos para Contato */
